@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCszrUJjH_LTwrYSkkoo7hCD3vBXTIWETk&"></script>
+
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+  <style media="screen">
+    body {}
+
+
+    div {
+      background: lightblue;
+      -border: 2px solid;
+    }
+
+    #container {
+      border: 1px solid;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    #currentLocation {
+      border-bottom: 3px solid;
+      text-align: center;
+    }
+
+    .form {
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+    <div id="header">
+      <div class="left">
+        <h1 id="currentLocation">Getting location...</h1></div>
+
+      <div class="navbar"></div>
+
+    </div>
+    <div id="container">
+      <h2 class="center-text content-title" id="currentTemp">...</h2>
+      <h6 class="center-text"><a href="#" id="toggle">Toggle C/F</a></h6>
+      <div class="content-body">
+        <p class="center-text" id='high-low'></p>
+        <p class="center-text" id='currentWeather'></p>
+      </div>
+    </div>
+    <div class="form">
+
+
+      <input type="text" name="location" value="">
+      <button type="submit" name="city">Odeslat</button>
+    </div>
+  </body>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
